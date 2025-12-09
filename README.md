@@ -1,6 +1,7 @@
+<img width="1910" height="1032" alt="スクリーンショット 2025-12-09 171608" src="https://github.com/user-attachments/assets/9201d9f0-6d2e-4cee-b70b-565a9b80840b" />
 
-<a href="https://apps.microsoft.com/detail/9NX82BWN9N4V?referrer=appbadge"><img width="1910" height="1032" alt="スクリーンショット 2025-12-09 171608" src="https://github.com/user-attachments/assets/72d51259-ebfd-4aaa-959c-5a4d927a194a" />
-
+<a href="https://apps.microsoft.com/detail/9nx82bwn9n4v?referrer=appbadge&mode=direct">
+	<img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
 </a>
 
 # DocuEase「旧名:Document Maker」
