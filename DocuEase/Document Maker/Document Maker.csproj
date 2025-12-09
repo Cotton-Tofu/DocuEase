@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61B5AFD3-8CB4-4A02-9611-B3D2DC7B36A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Document_Maker</RootNamespace>
+    <AssemblyName>DocuEase</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.4.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>New Copy.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddContactDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddContactDialog.Designer.cs">
+      <DependentUpon>AddContactDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressDeleteDone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressDeleteDone.Designer.cs">
+      <DependentUpon>AddressDeleteDone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressDeleteError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressDeleteError.Designer.cs">
+      <DependentUpon>AddressDeleteError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressDeleteWarningTaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressDeleteWarningTaskDialog.Designer.cs">
+      <DependentUpon>AddressDeleteWarningTaskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressWindow.Designer.cs">
+      <DependentUpon>AddressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWebLinkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWebLinkDialog.Designer.cs">
+      <DependentUpon>AddWebLinkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeThemeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeThemeDialog.Designer.cs">
+      <DependentUpon>ChangeThemeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DCW.Designer.cs">
+      <DependentUpon>DCW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogResetMessagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogResetMessagebox.Designer.cs">
+      <DependentUpon>DialogResetMessagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileDeleteWarningDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileDeleteWarningDialog.Designer.cs">
+      <DependentUpon>FileDeleteWarningDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontHelpTooltip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontHelpTooltip.Designer.cs">
+      <DependentUpon>FontHelpTooltip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImmersiveReaderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImmersiveReaderWindow.Designer.cs">
+      <DependentUpon>ImmersiveReaderWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeboradShortCut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeboradShortCut.Designer.cs">
+      <DependentUpon>KeboradShortCut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintErrorDialog.Designer.cs">
+      <DependentUpon>PrintErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetWarningTaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetWarningTaskDialog.Designer.cs">
+      <DependentUpon>ResetWarningTaskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAddress.Designer.cs">
+      <DependentUpon>SelectAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShareDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShareDialog.Designer.cs">
+      <DependentUpon>ShareDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SheetSpaceSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheetSpaceSettingDialog.Designer.cs">
+      <DependentUpon>SheetSpaceSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SheetsScaleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheetsScaleDialog.Designer.cs">
+      <DependentUpon>SheetsScaleDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashWindow.Designer.cs">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextResetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextResetDialog.Designer.cs">
+      <DependentUpon>TextResetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThirdParty.Designer.cs">
+      <DependentUpon>ThirdParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleStyleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleStyleDialog.Designer.cs">
+      <DependentUpon>TitleStyleDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseSoftWareWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseSoftWareWindow.Designer.cs">
+      <DependentUpon>UseSoftWareWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowForWordIntegrationError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowForWordIntegrationError.Designer.cs">
+      <DependentUpon>WindowForWordIntegrationError.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddContactDialog.resx">
+      <DependentUpon>AddContactDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressDeleteDone.resx">
+      <DependentUpon>AddressDeleteDone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressDeleteError.resx">
+      <DependentUpon>AddressDeleteError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressDeleteWarningTaskDialog.resx">
+      <DependentUpon>AddressDeleteWarningTaskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressWindow.resx">
+      <DependentUpon>AddressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWebLinkDialog.resx">
+      <DependentUpon>AddWebLinkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeThemeDialog.resx">
+      <DependentUpon>ChangeThemeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCW.resx">
+      <DependentUpon>DCW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogResetMessagebox.resx">
+      <DependentUpon>DialogResetMessagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileDeleteWarningDialog.resx">
+      <DependentUpon>FileDeleteWarningDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FontHelpTooltip.resx">
+      <DependentUpon>FontHelpTooltip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImmersiveReaderWindow.resx">
+      <DependentUpon>ImmersiveReaderWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeboradShortCut.resx">
+      <DependentUpon>KeboradShortCut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintErrorDialog.resx">
+      <DependentUpon>PrintErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResetWarningTaskDialog.resx">
+      <DependentUpon>ResetWarningTaskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectAddress.resx">
+      <DependentUpon>SelectAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShareDialog.resx">
+      <DependentUpon>ShareDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SheetSpaceSettingDialog.resx">
+      <DependentUpon>SheetSpaceSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SheetsScaleDialog.resx">
+      <DependentUpon>SheetsScaleDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashWindow.resx">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextResetDialog.resx">
+      <DependentUpon>TextResetDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdParty.resx">
+      <DependentUpon>ThirdParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleStyleDialog.resx">
+      <DependentUpon>TitleStyleDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseSoftWareWindow.resx">
+      <DependentUpon>UseSoftWareWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowForWordIntegrationError.resx">
+      <DependentUpon>WindowForWordIntegrationError.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MLModel1.mbconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AeroWizard">
+      <Version>2.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="FluentTransitions">
+      <Version>2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Krypton.Components.Suite">
+      <Version>4.5.9</Version>
+    </PackageReference>
+    <PackageReference Include="Krypton.Toolkit">
+      <Version>95.25.10.293</Version>
+    </PackageReference>
+    <PackageReference Include="Krypton.Toolkit.Suite.Extended.Floating.Toolbars">
+      <Version>100.25.11.328</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
+      <Version>7.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.WebView2">
+      <Version>1.0.3595.46</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts">
+      <Version>10.0.26100.7175</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.WindowsRuntime">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.WindowsRuntime.UI.Xaml">
+      <Version>4.7.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="New Copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
